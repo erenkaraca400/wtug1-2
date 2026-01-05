@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı Kafe | Stok Paneli</title>
+    <link rel="stylesheet" href="proje.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☕ Akıllı Kafe Stok Paneli</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Stoklarda ürün ara..." onkeyup="filterItems()">
+            </div>
+        </header>
+
+        <div class="stats-container">
+            <div class="card">
+                <h3>Toplam Ürün</h3>
+                <p id="total-count">0</p>
+            </div>
+            <div class="card warning">
+                <h3>Düşük Stok</h3>
+                <p id="low-stock-count">0</p>
+            </div>
+        </div>
+
+        <section class="add-section">
+            <h3>Yeni Ürün Kaydı</h3>
+    <div class="form-group">
+        <input type="text" id="p-name" placeholder="Ürün Adı">
+        <input type="number" id="p-qty" placeholder="Miktar">
+    
+        <input type="file" id="p-img-file" accept="image/*">
+    
+        <button onclick="addNewItem()">Ekle</button>
+    </div>
+        </section>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Görsel</th>
+                        <th>Ürün Adı</th>
+                        <th>Miktar</th>
+                        <th>Durum</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-list">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="jvs.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+:root {
+    --cafe-brown: #6F4E37;
+    --light-cream: #F5F5DC;
+    --accent: #D2B48C;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf9f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h1 { color: var(--cafe-brown); text-align: center; }
+
+/* Arama Çubuğu */
+.search-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid var(--accent);
+    margin: 20px 0;
+    outline: none;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    flex: 1;
+    background: var(--light-cream);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.warning { background: #fee2e2; color: #dc2626; }
+
+/* Form */
+.add-section {
+    background: #fdfdfd;
+    padding: 20px;
+    border: 1px dashed var(--accent);
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background: var(--cafe-brown);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Tablo ve Resimler */
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 15px; border-bottom: 2px solid #eee; }
+td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: middle; }
+
+.product-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.low-alert { color: #dc2626; font-weight: bold; }
